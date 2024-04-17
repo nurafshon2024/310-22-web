@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma teglari</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .forma {
+            margin: 0 auto;
+            width: 60%;
+            border: 1px solid #ececec;
+            background-color: #fefefe;
+            padding: 25px;
+        }
+
+        .forma input {
+            max-width: 100%;
+            font-size: 20px;
+            outline: none;
+            border: 1px solid black;
+            line-height: 24px;
+            border-radius: 5px;
+
+        }
+
+        .forma label {
+            color: black;
+            font-size: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .form-group .form-title{
+            width: 30%;
+        }
+        .mr-1{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="forma">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="" class="form-title">Ismingiz:</label>
+                    <input type="text" name="ismi" placeholder="Ismnni kirit..." required >
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-title">Familiyangiz:</label>
+                    <input type="text" name="fam">
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-title">Email:</label>
+                    <input type="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="parol" class="form-title">Parol:</label>
+                    <input type="password" id="parol"> 
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-title">Jinsi:</label>
+                    <input type="radio" name="jinsi">
+                    <label for="" class="pl">Mujik</label>
+                    <input type="radio" name="jinsi">
+                    <label for="" class="pl">Ayol</label>
+                </div>
+                <button type="submit">Jonatish</button>
+
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
